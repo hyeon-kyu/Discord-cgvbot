@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  discord-cgvbot:
+    build: .
+    container_name: discord-cgvbot
+    restart: unless-stopped
+    environment:
+      - TOKEN=${TOKEN}
+      - AUTO_CHECK=${AUTO_CHECK}
+      - AUTO_TIME=${AUTO_TIME}
+      - AUTO_MOVIE_ID=${AUTO_MOVIE_ID}
+      - AUTO_CHANNEL_ID=${AUTO_CHANNEL_ID}
+    volumes:
+      - .:/app
+      - /app/node_modules
