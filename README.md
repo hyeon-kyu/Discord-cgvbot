@@ -34,6 +34,11 @@ AUTO_CHANNEL_ID - 알림을 보낼 Discord 채널 ID
 2. 프로젝트 루트에 `.env` 파일을 생성하고 환경변수들을 설정합니다
 3. `docker-compose up -d` 명령어를 실행하여 봇을 실행합니다
 
+### 필요 디스코드 봇 권한
+- Send Messages
+- Embed Links
+- Mention Everyone
+
 ## 주의사항
 - CGV 웹사이트 정책에 따라 봇의 동작이 제한될 수 있습니다
 - 과도한 요청은 IP 차단의 원인이 될 수 있으니 적절한 시간 간격을 설정하세요
